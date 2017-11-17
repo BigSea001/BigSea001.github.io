@@ -117,18 +117,17 @@
   <div id="content-inner">
     
 <article id="post">
-  <div class="post-page-title" style="background-color:#26A69A;background-image:url(http://p2.so.qhimgs1.com/t019f9129d3d99e30d2.jpg)" >
-  <h2>android打包到指定目录</h2>
+  <div class="post-page-title"  style="background-color:#26A69A;background-image:url(/images/random/vateral-13.png)" >
+  <h2>看完这篇你学到什么：</h2>
     
-  <p>作者:大海 &nbsp&nbsp 发布于:<time datetime="2017-11-17T09:18:27.000Z">
+  <p>作者:大海 &nbsp&nbsp 发布于:<time datetime="2017-11-17T09:59:44.000Z">
           2017-11-17
     </time>
   </p>
     
   </div>
   <div class="post-page-content">
-  <p>将打出来的包用dradle脚本放到指定的目录下并显示渠道名 如 app-dahai-debug-1.0.apk<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">applicationVariants.all &#123; variant -&gt;</span><br><span class="line">    variant.outputs.each &#123; output -&gt;</span><br><span class="line">        def outputFile = output.outputFile</span><br><span class="line">        if (outputFile != null &amp;&amp; outputFile.name.endsWith(&apos;.apk&apos;)) &#123;</span><br><span class="line">            def dirName = APP_OUTPUT_DIR + &quot;v$&#123;defaultConfig.versionName&#125;&quot;</span><br><span class="line">            def fileName = outputFile.name.replace(&quot;.apk&quot;, &quot;-$&#123;defaultConfig.versionName&#125;.apk&quot;)</span><br><span class="line">            output.outputFile = new File(dirName, fileName)</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">在gradle.properties文件中定义文件的路劲如 APP_OUTPUT_DIR = F\:\\</span><br></pre></td></tr></table></figure>
+  
   </div>
   <!--评论块-->
     
@@ -137,7 +136,7 @@
 <nav class="post-nav">
   <!-- Prev Nav -->
     
-  <a href="/2017/11/17/看完这篇你学到什么：/" id="post_nav-newer" class="post-nav-content prev-content">
+  <a href="/2017/11/17/android多渠道多环境配置/" id="post_nav-newer" class="post-nav-content prev-content">
       新篇
   </a>
     
@@ -145,7 +144,7 @@
 
   <!-- Next Nav -->
     
-  <a href="/2017/11/15/新建文档/" id="post_nav-older" class="post-nav-content next-content">
+  <a href="/2017/11/17/android打包到指定目录/" id="post_nav-older" class="post-nav-content next-content">
       旧篇
   </a>
     
